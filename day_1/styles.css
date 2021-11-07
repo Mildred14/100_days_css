@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  background: linear-gradient(42deg, rgba(121 0 204) 0%, rgba(69,36,171,1) 41%, rgba(7,140,167,1) 100%);
+  font-family: 'Roboto Slab', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-content: center;
+}
+
+.zero, .one, .over, .diagonal, .days, .css {
+  position: absolute;
+}
+
+.zero {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 50%;
+  right: 0;
+}
+
+.zero::before {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(42deg, rgba(69,36,171,1) 41%, rgba(7,140,167,1) 100%);
+  border-radius: 50%;
+  transform: translate(50%, 50%);
+}
+
+.over {
+  transform: translate(-85%, 0px);
+  z-index: 1;
+  box-shadow: 10px 0px 10px -10px;
+}
+
+.one {
+  width: 25px;
+  height: 100px;
+  background-color: white;
+  left: 0;
+  box-shadow: 0px 0px 10px -4px;
+  z-index: 2;
+  border-radius: 5px;
+  transform: translate(90%, 0);
+}
+
+.diagonal {
+  width: 25px;
+  height: 45px;
+  background-color: white;
+  transform: translate(7px, 1px) rotate(45deg);
+  border-radius: 5px;
+  left: 0;
+}
+
+.wrap {
+  display: flex;
+  width: 220px;
+  height: 100px;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+}
+
+.text {
+  color: white;
+  display: flex;
+  font-size: 14px;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  width: 200px;
+  height: 80px;
+  transform: translate(10%, 0);
+}
+
+.days {
+  font-size: 5.5em;
+  margin: 0;
+  top: 0;
+  transform: translate(0px, -20px);
+  font-weight: bold;
+}
+
+.css {
+  margin: 0;
+  font-size: 1.7em;
+  bottom: 0;
+  transform: translate(0px, 11px);
+}
