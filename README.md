@@ -1,4 +1,4 @@
-## 100_days_css 🎨
+## 100 Days CSS 🎨
 
 This repo has the challenges of 100 DAYS CSS CHALLENGE 👉🏽 https://100dayscss.com/ 
 
