@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  color: #333;
+  background: white;
+  font-family: 'Roboto Slab', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-content: center;
+  background-color: #272C34;
+}
+
+.circle {
+  width: 180px;
+  height: 180px;
+  clip-path: circle(50.0% at 50% 50%);
+  background-color: #7DDFFC;
+  position: relative;
+  animation: darkness 5s infinite;
+}
+
+.sun {
+  width: 180px;
+  height: 180px;
+  animation: sun-transition 5s infinite;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  position: relative;
+  border-radius: 50px;
+}
+
+.sun::before {
+  content: '';
+  width: 25px;
+  height: 25px;
+  background-color: orange;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  animation: sun-color 5s infinite;
+}
+
+.floor {
+  width: 180px;
+  height: 70px;
+  background-color: #c7be7c;
+  position: absolute;
+  bottom: 0;
+}
+
+.pyramid-left {
+  width: 80px;
+  height: 50px;
+  background-color: white;
+  position: absolute;
+  top: 36%;
+  clip-path: polygon(80% 0, 100% 100%, 10% 100%);
+  transform: translate(0, -4px);
+  left: 20px;
+}
+
+.pyramid-rigth {
+  width: 60px;
+  height: 50px;
+  background-color: darkgray;
+  position: absolute;
+  top: 36%;
+  clip-path: polygon(12% 0%, 38% 100%, 100% 100%);
+  transform: translate(0, -4px);
+  right: 43px;
+}
+
+.shadow {
+  width: 200px;
+  height: 80px;
+  position: absolute;
+  background-color: #3636367a;
+  clip-path: polygon(24% 0, 78% 0, 100% 10%);
+  bottom: -6%;
+  right: 0;
+  animation: shadow 5s infinite;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+@keyframes sun-transition {
+  0% {
+    transform: translate(-10px, 0) rotate(0deg);
+  }
+  20%,
+  25%{
+    transform: rotate(50deg);
+  }
+  100% {
+    transform: rotate(200deg);
+  }
+}
+
+@keyframes sun-color {
+  10%, 100% {
+    background-color: #FEEF01;
+  }
+}
+
+@keyframes shadow {
+  20%, 25% {
+    clip-path: polygon(24% 0, 78% 0, 90% 30%);
+  }
+  100% {
+    clip-path: polygon(24% 0, 78% 0, 0% 12%);
+  }
+}
+
+
+@keyframes darkness {
+  0% {
+    opacity: 0;
+  }
+  30%, 70% {
+    opacity: 1;
+  }
+  90%, 100% {
+    opacity: 0;
+  }
+
+}
