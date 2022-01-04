@@ -47,8 +47,8 @@
 
 .sun::before {
   content: '';
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   background-color: orange;
   border-radius: 50%;
   position: absolute;
@@ -97,21 +97,30 @@
   animation: shadow 5s infinite;
   transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
 }
+
 @keyframes sun-transition {
   0% {
-    transform: translate(-10px, 0) rotate(0deg);
+    transform: translate(-15px, 0) rotate(0deg);
   }
   20%,
   25%{
-    transform: rotate(50deg);
+    transform: translate(0, 0) rotate(50deg);
+  }
+  50% {
+    margin-left: 8px;
   }
   100% {
-    transform: rotate(200deg);
+    transform: translate(15px, 0) rotate(200deg);
+    margin-left: 15px;
+
   }
 }
 
 @keyframes sun-color {
-  10%, 100% {
+  0% {
+    background-color: #ff7e1f;
+  }
+  25%, 100% {
     background-color: #FEEF01;
   }
 }
