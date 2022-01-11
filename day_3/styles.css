@@ -30,7 +30,7 @@
 .circle {
   width: 180px;
   height: 180px;
-  clip-path: circle(50.0% at 50% 50%);
+  clip-path: circle(49% at 50% 50%);
   background-color: #7DDFFC;
   position: relative;
   animation: darkness 5s infinite;
@@ -59,7 +59,7 @@
 .floor {
   width: 180px;
   height: 70px;
-  background-color: #c7be7c;
+  background-color: #F0DD75;
   position: absolute;
   bottom: 0;
 }
