@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  color: #333;
+  background: white;
+  font-family: 'Roboto Slab', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-content: center;
+  background-color: #E56262;
+}
+
+.circle-1, .circle-2, .circle-3 {
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0px 0px 15px rgba(77, 77, 77, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-1 {
+  width: 80px;
+  height: 80px;
+  animation: grow 5s infinite;
+}
+.circle-2 {
+  width: 55px;
+  height: 55px;
+  animation: grow-2 5s infinite;
+}
+
+.circle-3 {
+  width: 30px;
+  height: 30px;
+  animation: grow-3 5s infinite;
+}
+
+@keyframes grow {
+  0%, 100%  {
+    transform: scale(0);
+  }
+  30%, 70% {
+    transform: scale(1);
+  }
+}
+
+@keyframes grow-2 {
+  0%, 20%, 80%,100%  {
+    transform: scale(0);
+  }
+  35%, 65% {
+    transform: scale(1);
+  }
+}
+
+@keyframes grow-3 {
+  0%, 30%, 70%, 100%  {
+    transform: scale(0);
+  }
+  43%, 55% {
+    transform: scale(1);
+  }
+}
