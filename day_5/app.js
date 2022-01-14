@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', function() {
 	const wrapRedLines = document.getElementById('wrap-red-lines')
 
 	const createPoints = () => {
-		//CREAR tooltip dentro del div del punto y a partir e eso el after
 		for(let i=1; i<=7; i++) {
 			const redPoint = document.createElement('div')
 			const bluePoint = document.createElement('div')
@@ -22,21 +21,6 @@ document.addEventListener('DOMContentLoaded', function() {
 		}
 	}
 	createPoints()
-
-	const dot = document.getElementsByClassName('dot')
-	const tooltip = document.getElementById('tooltip')
-
-	for(var i =0; i<dot.length; i++) {
-		dot[i].addEventListener("mouseover", mOver, false);
-		dot[i].addEventListener("mouseout", mOut, false);
-
-		function mOver() {
-			tooltip.setAttribute("class", "tooltip")
-		}
-		function mOut() {
-			tooltip.setAttribute("class", "")
-		}
-	}
 }, false)
 
 

@@ -254,6 +254,35 @@ p {
   margin-right: 15px;
 }
 
+.dot:hover::after{
+  content: '48';
+  width: 24px;
+  height: 24px;
+  background-color: #7BA2FF;
+  color: white;
+  border-radius: 2px;
+  font-size: x-small;
+  position: absolute;
+  display: grid;
+  place-content: center;
+  bottom: 14px;
+  left: -10px;
+}
+
+.dot:hover::before{
+  content: '';
+  width: 24px;
+  height: 15px;
+  position: absolute;
+  display: block;
+  background-color: #7BA2FF;
+  border-radius: 2px;
+  bottom: 8px;
+  clip-path: polygon(100% 0, 1% 0, 51% 100%);
+  left: -10px;
+}
+
+
 .day:nth-child(n+3){
   margin-left: 5px;
 }
