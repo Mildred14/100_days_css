@@ -13,6 +13,10 @@ document.addEventListener('DOMContentLoaded', function() {
 		for(let i=1; i<=7; i++) {
 			const redPoint = document.createElement('div')
 			const bluePoint = document.createElement('div')
+			const tooltipValue = Math.floor(Math.random() * 10) + 1
+
+			redPoint.setAttribute('data-value' , `${tooltipValue + 4}`);
+			bluePoint.setAttribute('data-value' , `${tooltipValue}`);
 			bluePoint.className = `point-${i} dot bg-blue`
 			redPoint.className = `point-${i} dot bg-red`
 
@@ -22,8 +26,6 @@ document.addEventListener('DOMContentLoaded', function() {
 	}
 	createPoints()
 }, false)
-
-
 
 const days = ['MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT', 'SUN']
 

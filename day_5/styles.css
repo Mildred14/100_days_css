@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500&display=swap');
-
 h3,
 p {
   margin: 0px;
@@ -89,7 +88,7 @@ p {
 .chart-wrap {
   height: 80%;
   box-sizing: border-box;
-  padding: 15px 10px;
+  padding: 15px 15px;
 }
 
 .line-red {
@@ -134,7 +133,7 @@ p {
 .line-chart {
   fill: none;
   stroke: #dadada;
-  stroke-width: 1;
+  stroke-width: 1.5;
   position: absolute;
   height: 100px;
 }
@@ -160,8 +159,8 @@ p {
 
 .point-1, .point-2, .point-3, .point-4,
 .point-5, .point-6, .point-7 {
-  width: 5px;
-  height: 5px;
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
   position: absolute;
 }
@@ -185,22 +184,22 @@ p {
 }
 
 .bg-blue.point-3 {
-  top: 87px;
-  left: 82px;
+  top: 86px;
+  left: 81px;
 }
 
 .bg-blue.point-4 {
   top: 53px;
-  left: 124px;
+  left: 123px;
 }
 
 .bg-blue.point-5 {
-  top: 73px;
+  top: 72px;
   right: 128px;
 }
 
 .bg-blue.point-6 {
-  top: 73px;
+  top: 72px;
   right: 87px;
 }
 
@@ -220,7 +219,7 @@ p {
 
 .bg-red.point-3 {
   top: 57px;
-  left: 82px;
+  left: 81px;
 }
 
 .bg-red.point-4 {
@@ -246,6 +245,7 @@ p {
 #days {
   display: flex;
   width: 100%;
+  margin-top: 5px;
 }
 
 .day {
@@ -254,11 +254,10 @@ p {
   margin-right: 15px;
 }
 
-.dot:hover::after{
-  content: '48';
+.dot:hover::after {
+  content: attr(data-value);
   width: 24px;
   height: 24px;
-  background-color: #7BA2FF;
   color: white;
   border-radius: 2px;
   font-size: x-small;
@@ -269,19 +268,25 @@ p {
   left: -10px;
 }
 
-.dot:hover::before{
+.dot:hover::before {
   content: '';
   width: 24px;
   height: 15px;
   position: absolute;
   display: block;
-  background-color: #7BA2FF;
   border-radius: 2px;
   bottom: 8px;
   clip-path: polygon(100% 0, 1% 0, 51% 100%);
   left: -10px;
 }
 
+.bg-blue:hover::before, .bg-blue:hover::after {
+  background-color: #7BA2FF;
+}
+
+.bg-red:hover::before, .bg-red:hover::after {
+  background-color: #FA7373;
+}
 
 .day:nth-child(n+3){
   margin-left: 5px;
