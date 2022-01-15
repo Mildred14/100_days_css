@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link href="styles.css" rel="stylesheet">
+    <title>Default</title>
+  </head>
+  <body>
+    <div class="frame">
+      <div class="center">
+        <div class="card">
+          <div class="header">
+            <div class="header--titles d-flex justify-space-between">
+              <h3>WEEKLY REPORT</h3>
+              <p>Revenue</p>
+            </div>
+            <div class="header--values d-flex justify-space-between">
+              <div class="d-flex">
+                <p id="past" class="mr-1"></p>-
+                <p id="current" class="ml-1"></p>
+              </div>
+              <div>
+                <h3>$ 3621.79</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="chart-wrap">
+            <div class="d-flex align-items-center flex-end">
+              <div class="line-red"></div>
+              <p class="ml-3">Views</p>
+              <div class="line-blue ml-3"></div>
+              <p class="ml-3">Purchase</p>
+            </div>
+            <div class="statistics">
+              <div class="chart">
+                <svg>
+                  <polyline points="0 0, 300 0" class="guide"></polyline>
+                </svg>
+                <svg>
+                  <polyline points="0 0, 300 0" class="guide"></polyline>
+                </svg>
+                <svg>
+                  <polyline points="0 0, 300 0" class="guide"></polyline>
+                </svg>
+              </div>
+              <div class="wrap-lines">
+                <div id='wrap-blue-lines'>
+                  <svg>
+                    <polyline points="0 80, 42 70, 84 90, 126 55, 168 75, 210 75, 252 60" class="line-chart blue"></polyline>
+                  </svg>
+                </div>
+                <div id="wrap-red-lines">
+                  <svg class="red-line">
+                    <polyline points="0 60, 42 50, 84 60, 126 45, 168 55, 210 50, 252 45" class="line-chart red"></polyline>
+                  </svg>
+                </div>
+              </div>
+              <div id="days">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <script src="./app.js"></script>
+  </body>
+</html>

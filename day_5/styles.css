@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500&display=swap');
+h3,
+p {
+  margin: 0px;
+}
+
+h3 {
+  font-size: 14px;
+}
+
+p {
+  font-size: 12px;
+}
+
+.mr-1 {
+  margin-right: 2px;
+}
+
+.ml-1 {
+  margin-left: 2px;
+}
+
+.ml-3 {
+  margin-left: 6px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  color: #333;
+  background: white;
+  font-family: 'Nunito', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-content: center;
+  background-color: #42A7A0;
+}
+
+.card {
+  width: 290px;
+  height: 230px;
+  background-color: white;
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
+  border-radius: 4px;
+}
+
+.header {
+  width: 100%;
+  height: 65px;
+  background-color: #F0BA63;
+  border-radius: 4px 4px 0 0;
+  color: white;
+  padding: 15px 10px;
+  box-sizing: border-box;
+}
+
+.chart-wrap {
+  height: 80%;
+  box-sizing: border-box;
+  padding: 15px 15px;
+}
+
+.line-red {
+  width: 12px;
+  border: 2px solid #FA7373;
+  border-radius: 1px;
+  background-color: #FA7373;
+}
+
+.line-blue {
+  width: 12px;
+  border: 2px solid #7BA2FF;
+  border-radius: 1px;
+  background-color: #7BA2FF;
+}
+
+.chart {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100px;
+  transform: rotate(180deg);
+}
+
+.guide {
+  fill:none;
+  stroke:#dadada;
+  stroke-width:1;
+}
+
+.wrap-lines {
+  height: 100px;
+  position: absolute;
+  top: 0;
+}
+
+#wrap-blue-lines, #wrap-red-lines {
+  position: absolute;
+  height: 100%;
+}
+
+.line-chart {
+  fill: none;
+  stroke: #dadada;
+  stroke-width: 1.5;
+  position: absolute;
+  height: 100px;
+}
+
+.red {
+  stroke: #FA7373;
+}
+
+.blue {
+  stroke: #7BA2FF;
+}
+
+.red-line {
+  position: absolute;
+  left: 0;
+  height: 100px;
+}
+
+.statistics {
+  position: relative;
+  height: 100px;
+}
+
+.point-1, .point-2, .point-3, .point-4,
+.point-5, .point-6, .point-7 {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.bg-blue {
+  background-color: #7BA2FF;
+  z-index: 4;
+}
+
+.bg-red {
+  background-color: #FA7373;
+}
+
+.bg-blue.point-1 {
+  top: 77px;
+}
+
+.bg-blue.point-2 {
+  top: 68px;
+  left: 40px;
+}
+
+.bg-blue.point-3 {
+  top: 86px;
+  left: 81px;
+}
+
+.bg-blue.point-4 {
+  top: 53px;
+  left: 123px;
+}
+
+.bg-blue.point-5 {
+  top: 72px;
+  right: 128px;
+}
+
+.bg-blue.point-6 {
+  top: 72px;
+  right: 87px;
+}
+
+.bg-blue.point-7 {
+  top: 57px;
+  right: 45px;
+}
+
+.bg-red.point-1 {
+  top: 57px;
+}
+
+.bg-red.point-2 {
+  top: 47px;
+  left: 40px;
+}
+
+.bg-red.point-3 {
+  top: 57px;
+  left: 81px;
+}
+
+.bg-red.point-4 {
+  top: 43px;
+  left: 124px;
+}
+
+.bg-red.point-5 {
+  top: 52px;
+  left: 166px;
+}
+
+.bg-red.point-6 {
+  top: 47px;
+  left: 208px;
+}
+
+.bg-red.point-7 {
+  top: 42px;
+  left: 249px;
+}
+
+#days {
+  display: flex;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.day {
+  font-size: xx-small;
+  color: #afafaf;
+  margin-right: 15px;
+}
+
+.dot:hover::after {
+  content: attr(data-value);
+  width: 24px;
+  height: 24px;
+  color: white;
+  border-radius: 2px;
+  font-size: x-small;
+  position: absolute;
+  display: grid;
+  place-content: center;
+  bottom: 14px;
+  left: -10px;
+}
+
+.dot:hover::before {
+  content: '';
+  width: 24px;
+  height: 15px;
+  position: absolute;
+  display: block;
+  border-radius: 2px;
+  bottom: 8px;
+  clip-path: polygon(100% 0, 1% 0, 51% 100%);
+  left: -10px;
+}
+
+.bg-blue:hover::before, .bg-blue:hover::after {
+  background-color: #7BA2FF;
+}
+
+.bg-red:hover::before, .bg-red:hover::after {
+  background-color: #FA7373;
+}
+
+.day:nth-child(n+3){
+  margin-left: 5px;
+}
+
+.day:nth-child(n+5){
+  margin-left: 14px;
+}
+
+.day:nth-child(n+7){
+  margin-left: 5px;
+}
+
+#wrap-blue-lines > .tooltip {
+  opacity: 1;
+}
+
+.tooltip {
+  width: 20px;
+  height: 25px;
+  background-color: #7BA2FF;
+  border-radius: 3px;
+}
