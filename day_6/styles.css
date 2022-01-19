@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500&display=swap');
+
+p {
+  margin: 0;
+  color: #786450;
+}
+
+button {
+  width: 120px;
+  height: 30px;
+  background-color: white;
+  border-radius: 30px;
+  border: 1px solid #786450;
+  color: #786450;
+  font-weight: bolder;
+}
+
+button:hover {
+  background-color: #786450;
+  color: white;
+  transition: .3s ease;
+}
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  color: #333;
+  background: white;
+  font-family: 'Nunito', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-content: center;
+  background: linear-gradient(42deg, rgba(231,180,96,1) 0%, rgba(210,151,44,1) 46%, rgba(191,111,2,1) 100%);
+}
+
+.profile {
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  border-radius: 4px;
+  display: flex;
+}
+
+.user {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.user-activity {
+  height: 100%;
+  width: 40%;
+  border-radius: 0 4px 4px 0;
+  display: grid;
+  grid-auto-rows: auto;
+  grid-gap: 2px;
+}
+
+.info:hover {
+  background-color: #E1CFC2;
+  transition: .3s ease;
+  cursor: pointer;
+}
+
+.posts, .likes, .followers {
+  background-color: #F5E7DF;
+  place-content: center;
+  display: grid;
+  text-align: center;
+}
+
+.posts {
+  grid-row: 1;
+  border-top-right-radius: 4px;
+}
+
+.likes {
+  grid-row: 2;
+}
+
+.followers {
+  grid-row: 3;
+  border-bottom-right-radius: 4px;
+}
+
+.bold {
+  font-weight: bolder;
+}
+
+.small {
+  font-size: small;
+}
+
+.profile-picture {
+  border-radius: 50%;
+  width: 87px;
+  height: 87px;
+  position: absolute;
+  transform: translate(7%, 6px);
+}
+
+.wrap-picture {
+  position: relative;
+}
+
+.circle-1, .circle-2 {
+  cursor: pointer;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 2s ease;
+  position: absolute;
+}
+
+.circle-1 {
+  width: 99px;
+  height: 99px;
+  border-color:  #786450  transparent #786450  #786450 ;
+  border-radius: 89px;
+  transform: translate(-1px, -1px);
+}
+
+.circle-2 {
+  width: 93px;
+  height: 93px;
+  border-color:  #786450  #786450  #786450 transparent;
+  border-radius: 89px;
+  transform: translate(2px, 2px);
+}
+
+.circle-1:hover {
+  transform: rotate(-360deg);
+}
+
+.circle-2:hover {
+  transform: rotate(-360deg);
+}
+
+.picture {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cta {
+  display: grid;
+  place-content: center;
+}
+
+.follow {
+  margin-bottom: 10px;
+}
+
+.name {
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.job-title {
+  font-size: x-small;
+}
