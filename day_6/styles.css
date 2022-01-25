@@ -150,12 +150,12 @@ button:hover {
   transform: translate(6px, 2px);
 }
 
-.wrap-picture > .circle-1:hover {
+.wrap-picture:hover > .circle-1 {
   transform: translate(6px, -1px) rotate(360deg);
 }
 
-.wrap-picture > .circle-2:hover {
-  transform: translate(6px, 2px) rotate(360deg);
+.wrap-picture:hover > .circle-2 {
+  transform: translate(6px, 2px) rotate(-360deg);
 }
 
 .picture {
