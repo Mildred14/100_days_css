@@ -110,10 +110,11 @@ button:hover {
 
 .profile-picture {
   border-radius: 50%;
-  width: 87px;
-  height: 87px;
+  width: 83px;
+  height: 83px;
   position: absolute;
   transform: translate(7%, 6px);
+  object-fit: cover;
 }
 
 .wrap-picture {
@@ -135,16 +136,16 @@ button:hover {
 }
 
 .circle-1 {
-  width: 99px;
-  height: 99px;
+  width: 97px;
+  height: 96px;
   border-color:  #786450  transparent #786450  #786450 ;
   border-radius: 89px;
   transform: translate(6px, -1px);
 }
 
 .circle-2 {
-  width: 93px;
-  height: 93px;
+  width: 89px;
+  height: 89px;
   border-color:  #786450  #786450  #786450 transparent;
   border-radius: 89px;
   transform: translate(6px, 2px);
