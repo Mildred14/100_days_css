@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  color: #333;
+  background: white;
+  font-family: 'Nunito', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  height: 100%;
+  width: 100%;
+  background-color: #264057;
+  display: grid;
+  place-content: center;
+}
+
+.notifications {
+  width: 300px;
+  height: 300px;
+  border-radius: 3px;
+  background-color: white;
+  color: white;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #5F98CD;
+  border-radius: 3px 3px 0 0;
+  height: 50px;
+  width: 100%;
+}
+
+.menu-left-icon {
+  width: 45px;
+  height: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.wrap-line-circle {
+  display: flex;
+  align-items: center;
+}
+
+.line {
+  width: 27px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: white;
+  opacity: 0.6;
+}
+
+.line-xs {
+  width: 18px;
+}
+
+.circle {
+  width: 7px;
+  height: 7px;
+  background-color: white;
+  opacity: 0.6;
+  border-radius: 7px;
+  margin-left: 2px;
+}
+
+.square-icon {
+  width: 15px;
+  height: 15px;
+  border: 2px solid white;
+  opacity: 0.4;
+}
+
+.resume {
+  display: flex;
+}
+
+.timeline {
+  width: 3px;
+  height: 250px;
+  background-color: #afafaf;
+  margin-left: 33px;
+  opacity: 0.4;
+}
+
+.notification {
+  color: #4d4d4d;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.text {
+  width: 92%;
+  float: right;
+  margin-bottom: 15px;
+}
+
+.text:hover {
+  color: #5F98CD;
+  cursor: pointer;
+}
+
+.hour {
+  font-size: x-small;
+  display: flex;
+  transform: translate(-16px, 0px);
+}
+
+.hour::before {
+  content: '';
+  display: flex;
+  width: 12px;
+  height: 12px;
+  background-color: #5F98CD;
+  border-radius: 8px;
+  transform: translate(-14px, 0);
+  border: 2px solid white;
+}
+
+.hour::after {
+  content: '';
+  display: flex;
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  border-radius: 8px;
+  transform: translate(-65px, 4px);
+}
+
+.long-text::after{
+  transform: translate(-70px, 4px);
+}
+
+.name {
+  font-weight: bold;
+}
+
+p {
+  margin: 0;
+}

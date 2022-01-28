@@ -114,9 +114,9 @@ p {
 }
 
 .guide {
-  fill:none;
-  stroke:#dadada;
-  stroke-width:1;
+  fill: none;
+  stroke: #dadada;
+  stroke-width: 1;
 }
 
 .wrap-lines {
