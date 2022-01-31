@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  color: #333;
+  background: white;
+  font-family: 'Nunito', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  height: 100%;
+  width: 100%;
+  background-color: #264057;
+  display: grid;
+  place-content: center;
+}
+
+.notifications {
+  width: 300px;
+  height: 300px;
+  border-radius: 3px;
+  background-color: white;
+  color: white;
+  z-index: 1;
+  position: absolute;
+  transition: 1s;
+  -webkit-transition: 1s;
+}
+
+.transition-notifications {
+  margin-left: 300px;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #5F98CD;
+  border-radius: 3px 3px 0 0;
+  height: 50px;
+  width: 100%;
+  position: relative;
+}
+
+.menu-left-icon {
+  width: 45px;
+  height: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.menu-left-icon:hover {
+  cursor: pointer;
+}
+
+.wrap-line-circle {
+  display: flex;
+  align-items: center;
+}
+
+.line {
+  width: 27px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: white;
+  opacity: 0.6;
+}
+
+.line-xs {
+  width: 18px;
+}
+
+.circle {
+  width: 7px;
+  height: 7px;
+  background-color: white;
+  opacity: 0.6;
+  border-radius: 7px;
+  margin-left: 2px;
+}
+
+.square-icon {
+  width: 12px;
+  height: 12px;
+  border: 2px solid white;
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+.resume {
+  display: flex;
+}
+
+.timeline {
+  width: 3px;
+  height: 250px;
+  background-color: #afafaf;
+  margin-left: 33px;
+  opacity: 0.4;
+}
+
+.notification {
+  color: #4d4d4d;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.text {
+  width: 92%;
+  float: right;
+  animation: display-notifications 1.5s forwards;
+}
+
+.text:hover {
+  color: #5F98CD;
+  cursor: pointer;
+}
+
+.hour {
+  font-size: x-small;
+  display: flex;
+  transform: translate(-16px, 0px);
+}
+
+.hour::before {
+  content: '';
+  display: flex;
+  width: 12px;
+  height: 12px;
+  background-color: #5F98CD;
+  border-radius: 8px;
+  transform: translate(-14px, 0);
+  border: 2px solid white;
+}
+
+.hour::after {
+  content: '';
+  display: flex;
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  border-radius: 8px;
+  transform: translate(-65px, 4px);
+}
+
+.long-text::after{
+  transform: translate(-70px, 4px);
+}
+
+.name {
+  font-weight: bold;
+}
+
+p {
+  margin: 0;
+}
+
+.menu-options {
+  background-color: #43627D;
+  width: 180px;
+  height: 280px;
+  position: absolute;
+  z-index: 0;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+}
+
+.transition-menu-options {
+  margin-right: 140px;
+}
+
+.menu-options > ul {
+  list-style-type: none;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 12px;
+  color: white;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  height: 45px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 30px;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+li:hover {
+  background-color: #272C34;
+  opacity: 1;
+  color: white;
+}
+
+li:hover::before {
+  opacity: 1;
+}
+
+li:before {
+  content: '';
+  display: flex;
+  width: 6px;
+  height: 6px;
+  border: 2px solid white;
+  opacity: 0.4;
+  margin-right: 5px;
+}
+
+.search-box {
+  width: 230px;
+  height: 27px;
+  border-radius: 30px;
+  background-color: white;
+  position: absolute;
+  box-sizing: border-box;
+  padding: 5px 15px;
+  margin-right: 15px;
+  z-index: -1;
+  border: 0;
+  opacity: 0;
+  transition: all 1s;
+  -webkit-transition: all 0.5s;
+}
+
+.search-box:focus {
+  outline-width: 0;
+}
+
+.search-box::placeholder {
+  font-size: small;
+  color: #afafaf;
+}
+
+.search-transition {
+  z-index: 1;
+  opacity: 1;
+  margin-right: 50px;
+}
+
+@keyframes display-notifications {
+  0% {
+  opacity: 0;
+  margin-top: 20px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 8px;
+  }
+}
