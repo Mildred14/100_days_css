@@ -33,14 +33,14 @@
   height: 110px;
   border-radius: 50%;
   background-color: white;
-  filter: blur(10px)
+  filter: blur(6px);
+  position: relative;
 }
 
 .ink {
   position: absolute;
   border-radius: 50%;
   background-color: white;
-  transform-origin: 35px 35px;
   animation: rotation 3s ease-in-out infinite;
   filter: blur(4px);
 }
@@ -48,8 +48,9 @@
 .one {
   transform-origin: bottom left;
   width: 50px;
-  height: 50px;
-  right: 0;
+  height: 45px;
+  right: 10px;
+  bottom: 55%;
 }
 
 .two {
@@ -63,16 +64,90 @@
 
 .three {
   transform-origin: top right;
-  width: 55px;
-  height: 35px;
+  width: 20px;
+  height: 20px;
   animation-duration: 2s;
   top: 50%;
   bottom: 50%;
-  left: -30px;
+  left: -6px;
 }
+
+.bubbles {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  left: 50%;
+}
+
+.bubbles::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transform-origin: 50px 50px;
+  background-color: white;
+  animation: rotation 3s ease-in-out infinite;
+  border: 1px solid rgb(255 179 64 / 65%);
+}
+
+.b-two::before {
+  width: 15px;
+  height: 15px;
+  transform-origin: -50px 50px;
+}
+
+.b-three::before {
+  width: 25px;
+  height: 25px;
+  transform-origin: -50px -50px;
+  animation-duration: 4s;
+}
+
+.b-four::before {
+  width: 30px;
+  height: 30px;
+  transform-origin: 50px -50px;
+  animation-duration: 7s;
+}
+
+.b-five::before {
+  width: 15px;
+  height: 15px;
+  transform-origin: 10px -100px;
+  animation-duration: 5s;
+}
+
+.b-six::before {
+  width: 25px;
+  height: 25px;
+  transform-origin: -20px 50px;
+  animation-duration: 2s;
+}
+
+.b-seven::before {
+  width: 30px;
+  height: 30px;
+  transform-origin: -20px -30px;
+}
+
+.b-eight::before {
+  transform-origin: 30px 70px;
+  animation-duration: 2s;
+}
+
+.b-nine::before {
+  width: 15px;
+  height: 15px;
+  transform-origin: -30px -70px;
+  animation-duration: 5s;
+}
+
 
 @keyframes rotation {
   100% {
-    transform: rotate(360deg) translate3d(0, 0, 0);
+    transform: rotate(360deg);
   }
 }
