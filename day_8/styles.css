@@ -90,7 +90,6 @@
   transform-origin: 50px 50px;
   background-color: white;
   animation: rotation 3s ease-in-out infinite;
-  border: 1px solid rgb(255 179 64 / 65%);
 }
 
 .b-two::before {
