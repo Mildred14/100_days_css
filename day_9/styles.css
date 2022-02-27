@@ -309,91 +309,136 @@
 }
 
 @keyframes drops {
+  85% {
+    transform: translate(360px, 290px) scaleX(0.5) scaleY(0.5);
+  }
   100% {
-    transform: translate(360px, 310px);
+    transform: translate(360px, 310px) scaleX(3) scaleY(0);
   }
 }
 
 @keyframes d-two {
+  85% {
+    transform: translate(310px, 290px) scaleX(0.5) scaleY(0.5);
+  }
   100% {
-    transform: translate(310px, 320px);
+    transform: translate(310px, 320px) scaleX(3) scaleY(0);
   }
 }
 
 @keyframes d-three {
+  85% {
+    transform: translate(260px, 290px) scaleX(0.5) scaleY(0.5);
+  }
   100% {
-    transform: translate(260px, 320px);
+    transform: translate(260px, 320px) scaleX(3) scaleY(0);
   }
 }
 
 @keyframes d-four {
+  85% {
+    transform: translate(210px, 290px) scaleX(0.5) scaleY(0.5);
+  }
   100% {
-    transform: translate(210px, 320px);
+    transform: translate(210px, 320px)  scaleX(3) scaleY(0);
   }
 }
 
 @keyframes d-five {
+  85% {
+    transform: translate(150px, 290px) scaleX(0.5) scaleY(0.5);
+  }
   100% {
-    transform: translate(150px, 320px);
+    transform: translate(150px, 320px) scaleX(3) scaleY(0);
   }
 }
 
 @keyframes d-six {
+  85% {
+    transform: translate(100px, 290px) scaleX(0.5) scaleY(0.5);
+  }
   100% {
-    transform: translate(100px, 320px);
+    transform: translate(100px, 320px) scaleX(3) scaleY(0);
   }
 }
 
 @keyframes d-seven {
+  85% {
+    transform: translate(45px, 290px) scaleX(0.5) scaleY(0.5);
+  }
   100% {
-    transform: translate(45px, 320px);
+    transform: translate(45px, 320px) scaleX(3) scaleY(0);
   }
 }
 
 @keyframes d-eight {
+  85% {
+    transform: translate(-5px, 290px) scaleX(0.5) scaleY(0.5);
+  }
   100% {
-    transform: translate(-5px, 320px);
+    transform: translate(-5px, 320px) scaleX(3) scaleY(0);
   }
 }
 
 @keyframes d-nine {
+  85% {
+    transform: translate(-60px, 290px) scaleX(0.5) scaleY(0.5);
+  }
   100% {
-    transform: translate(-60px, 320px);
+    transform: translate(-60px, 320px) scaleX(3) scaleY(0);
   }
 }
 
 @keyframes d-ten {
+  85% {
+    transform: translate(-120px, 290px) scaleX(0.5) scaleY(0.5);
+  }
   100% {
-    transform: translate(-120px, 320px);
+    transform: translate(-120px, 320px) scaleX(3) scaleY(0);
   }
 }
 
 @keyframes d-mini {
+  85% {
+    transform: translate(85px, 290px) scaleX(0.5) scaleY(0.5);
+  }
   100% {
-    transform: translate(85px, 320px);
+    transform: translate(85px, 320px) scaleX(3) scaleY(0);
   }
 }
 
 @keyframes d-mini-two {
+  85% {
+    transform: translate(35px, 290px) scaleX(0.5) scaleY(0.5);
+  }
   100% {
-    transform: translate(35px, 320px);
+    transform: translate(35px, 320px)  scaleX(3) scaleY(0);
   }
 }
 
 @keyframes d-mini-three {
+  85% {
+    transform: translate(-50px, 290px) scaleX(0.5) scaleY(0.5);
+  }
   100% {
-    transform: translate(-50px, 320px);
+    transform: translate(-50px, 320px) scaleX(3) scaleY(0);
   }
 }
 
 @keyframes d-mini-four {
+  85% {
+    transform: translate(-105px, 290px) scaleX(0.5) scaleY(0.5);
+  }
   100% {
-    transform: translate(-105px, 320px);
+    transform: translate(-105px, 320px) scaleX(3) scaleY(0);
   }
 }
 
 @keyframes d-mini-five {
+  85% {
+    transform: translate(-155px, 290px) scaleX(0.5) scaleY(0.5);
+  }
   100% {
-    transform: translate(-155px, 320px);
+    transform: translate(-155px, 320px) scaleX(3) scaleY(0);
   }
 }
