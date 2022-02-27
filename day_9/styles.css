@@ -186,7 +186,7 @@
   height: 20px;
   transform: translate(395px, 0);
   z-index: 2;
-  animation: drops 1s infinite ease-in;
+  animation: drops 1s infinite linear;
 }
 
 .triangle {
@@ -215,55 +215,53 @@
 
 .d-two {
   transform: translate(365px, -15px);
-  animation: d-two 1.2s infinite ease-in;
-  animation-delay: 0.2s;
+  animation: d-two 1.2s infinite linear;
 }
 
 .d-three {
   transform: translate(335px, -15px);
-  animation: d-three 1s infinite ease-in;
+  animation: d-three 1s infinite linear;
   animation-delay: 0.5s;
 }
 
 .d-four {
   transform: translate(305px, -15px);
-  animation: d-four 1.1s infinite ease-in;
-  animation-delay: 0.1s;
+  animation: d-four 1.1s infinite linear;
 }
 
 .d-five {
   transform: translate(250px, -15px);
-  animation: d-five 0.8s infinite ease-in;
+  animation: d-five 0.8s infinite linear;
 }
 
 .d-six {
   transform: translate(200px, -15px);
-  animation: d-six 0.9s infinite ease-in;
+  animation: d-six 0.9s infinite linear;
 }
 
 .d-seven {
   transform: translate(150px, -15px);
-  animation: d-seven 1s infinite ease-in;
+  animation: d-seven 1s infinite linear;
 }
 
 .d-eight {
   transform: translate(100px, -15px);
-  animation: d-eight 0.7s infinite ease-in;
+  animation: d-eight 0.7s infinite linear;
 }
 
 .d-nine {
   transform: translate(50px, -15px);
-  animation: d-nine 1.1s infinite ease-in;
+  animation: d-nine 1.1s infinite linear;
 }
 
 .d-ten {
   transform: translate(-58px, -15px);
-  animation: d-ten 0.8s infinite ease-in;
+  animation: d-ten 0.8s infinite linear;
 }
 
 .d-mini {
   transform: translate(200px, 0);
-  animation: d-mini 1s infinite ease-in;
+  animation: d-mini 1s infinite linear;
   opacity: 0.3;
 }
 
@@ -282,25 +280,25 @@
 
 .d-mini-two {
   transform: translate(150px, 0);
-  animation: d-mini-two 1.1s infinite ease-in;
+  animation: d-mini-two 1.1s infinite linear;
   opacity: 0.5;
 }
 
 .d-mini-three {
   transform: translate(70px, 0);
-  animation: d-mini-three 0.7s infinite ease-in;
+  animation: d-mini-three 0.7s infinite linear;
   opacity: 0.6;
 }
 
 .d-mini-four {
   transform: translate(0, 0);
-  animation: d-mini-four 0.8s infinite ease-in;
+  animation: d-mini-four 0.8s infinite linear;
   opacity: 0.4;
 }
 
 .d-mini-four {
   transform: translate(-50px, 0);
-  animation: d-mini-five 1s infinite ease-in;
+  animation: d-mini-five 1s infinite linear;
   opacity: 0.4;
 }
 
