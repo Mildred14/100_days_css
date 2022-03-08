@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500&display=swap');
 .frame {
   position: absolute;
   top: 50%;
@@ -14,7 +13,7 @@
   overflow: hidden;
   color: #333;
   background: white;
-  font-family: 'Roboto Slab', Helvetica, sans-serif;
+  font-family: 'Fredoka', Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -42,4 +41,8 @@
   height: 200px;
   border-radius: 50%;
   border: 4px dotted #c7c7c7;
+}
+
+.info {
+  text-align: center;
 }
